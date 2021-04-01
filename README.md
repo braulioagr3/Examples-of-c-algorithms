@@ -1,1 +1,1 @@
-# Examples-of-c-algorithms
+# Examples of c++ algorithms
