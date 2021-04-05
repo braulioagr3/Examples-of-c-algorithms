@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include "Headers/CPixel.h"
+#include "Headers/CAlgorithmDDA.h"
 
 using namespace std;
 
@@ -24,7 +25,8 @@ int main(int argc, char const *argv[])
                 band = false;
             break;
             case 1:
-                cout << "DDA Algorithm" << endl;
+                cout << "Digital Differential Analyzer Algorithm" << endl;
+                CAlgorithmDDA::digitalDifferentialAnalyzer();
             break;
             case 2:
                 cout << "Bresenham Algorithm" << endl;
@@ -38,4 +40,3 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
-

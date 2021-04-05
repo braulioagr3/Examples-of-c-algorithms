@@ -15,3 +15,8 @@ int CPixel::getY()
 {
     return this->y;
 }
+
+bool CPixel::operator==(CPixel* p)
+{
+    return (this->x==p->x) && (this->y == p->y);
+}

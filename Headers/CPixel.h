@@ -12,5 +12,6 @@ class CPixel
         CPixel(int x, int y);
         int getX();
         int getY();
+        bool operator==(CPixel* p);
 };
 #endif
