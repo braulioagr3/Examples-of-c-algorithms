@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Headers/CPixel.h"
 #include "Headers/CAlgorithmDDA.h"
+#include "Headers/CAlgorithmBresenham.h"
 
 using namespace std;
 
@@ -30,6 +31,7 @@ int main(int argc, char const *argv[])
             break;
             case 2:
                 cout << "Bresenham Algorithm" << endl;
+                CAlgorithmBresenham::bresenham();
             break;
         }
         if(band)
