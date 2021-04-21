@@ -19,5 +19,6 @@ class CMatrix
         float** getVaues();
         void setValues();
         void printValues();
+        CMatrix* multiply(CMatrix* m);
 };
 #endif

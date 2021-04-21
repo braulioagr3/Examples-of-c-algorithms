@@ -52,3 +52,22 @@ int CMatrix::getRows()
 {
     return this->rows;
 }
+
+CMatrix* CMatrix::multiply(CMatrix* m)
+{
+    CMatrix* ans;
+    ans = new CMatrix(this->rows, m->getColumns());
+    //OPERACION DE MULTIPLICACION
+    for(int i = 0 ; i < this->rows ; i++)
+    {
+        for(int j = 0 ; j < m->getColumns() ; j++)
+        {
+            ans->getVaues()[i][j] = 0;
+            for(int k = 0 ; k < this->columns ; k++)
+            {
+                ans->getVaues()[i][j] = ans->getVaues()[i][j] + this->getVaues()[i][k] * m->getVaues()[k][j];
+            }
+        }
+    }
+    return ans;
+}
